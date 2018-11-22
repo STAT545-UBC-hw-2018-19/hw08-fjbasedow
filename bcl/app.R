@@ -12,10 +12,7 @@ ui <- fluidPage(
       h4("Wondering what drink to get for tonight? This app will help you through the selection of the BC Liquor Store."),
       sliderInput("priceInput", "Price", 0, 100, c(25, 40), pre = "$"),
       uiOutput("typeOutput"),
-      #conditionalPanel(
-       # condition = "input.typeInput %in% 'WINE'",
-        #uiOutput("subtypeOutput")
-        #),
+
       # create checkbox for option to filter for country
       checkboxInput("countryFilter", "Filter by country", value = FALSE),
       
@@ -48,14 +45,6 @@ server <- function(input, output) {
     )
   })
   
-  #output$subtypeOutput <-
-   # renderUI({
-    #  selectInput("subtypeInput", "Type of wine",
-     #             choices = c("RED", "WHITE"),
-      #            multiple = TRUE,
-       #           selected = "RED")
-    #})
-  
   # create panel to select country
   output$countryOutput <- renderUI({
     selectInput("countryInput", "Country",
@@ -78,11 +67,10 @@ server <- function(input, output) {
         Price <= input$priceInput[2],
         Type %in% input$typeInput
       )
-    }
+    } 
     # filter bcl data by price and type of drink only if no country is selected
-    else {
-      bcl %>%
-        filter(
+    else { 
+      bcl %>% filter(
           Price >= input$priceInput[1],
           Price <= input$priceInput[2],
           Type %in% input$typeInput
