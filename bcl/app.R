@@ -9,7 +9,7 @@ ui <- fluidPage(
   titlePanel("BC Liquor Store Inventory"),
   sidebarLayout(
     sidebarPanel(
-      h5("Wondering what drink to get for tonight? This app will help you through the selection of the BC Liquor Store."),
+      h4("Wondering what drink to get for tonight? This app will help you through the selection of the BC Liquor Store."),
       sliderInput("priceInput", "Price", 0, 100, c(25, 40), pre = "$"),
       uiOutput("typeOutput"),
       checkboxInput("countryFilter", "Filter by country", value = FALSE),
