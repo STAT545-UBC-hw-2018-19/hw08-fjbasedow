@@ -1,6 +1,6 @@
 # STAT547 Homework 8 repository
 
-This repo contains my homework 8 for STAT547. The goal of this homework was to change a boilerplate of the BC Liquor App, which were provided by the instructors.
+This repo contains my homework 8 for STAT547. The goal of this homework was to change a boilerplate of the BC Liquor App, which was provided by the instructors.
 
 The original code and data are from [Dean Attali's tutorial](https://deanattali.com/blog/building-shiny-apps-tutorial). The code can specifically be found [here](https://deanattali.com/blog/building-shiny-apps-tutorial/#12-final-shiny-app-code).
 
