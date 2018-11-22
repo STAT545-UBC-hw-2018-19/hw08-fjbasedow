@@ -14,7 +14,7 @@ I made the following changes to the app:
 
 You can find my version of the app [here](https://fjbasedow.shinyapps.io/STAT545-HW08-BCL-app/).
 
-The code for my app can be found [here](https://github.com/STAT545-UBC-students/hw08-fjbasedow/blob/master/bcl/app.R)
+The code for my app can be found [here](https://github.com/STAT545-UBC-students/hw08-fjbasedow/blob/master/bcl/app.R).
 
 Cheers,
 Rike
