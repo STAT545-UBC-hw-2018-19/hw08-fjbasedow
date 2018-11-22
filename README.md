@@ -7,7 +7,7 @@ The original code and data are from [Dean Attali's tutorial](https://deanattali.
 I made the following changes to the app:
 
 - I made the table interactive by using the `DT`package.
-- I added colours to the plot and changed the axes and legend labels and the theme
+- I added colours to the plot, changed the axes and legend labels, the bin width of the histogram and the colour theme of the plot
 - I added text that summarizes the number of findings for each individual search
 - I changed the type and country selection options so that the user can search for multiple types of drinks and multiple countries at the same time
 - I changed the country selection so that searching for all countries is also an option
