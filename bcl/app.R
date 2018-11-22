@@ -90,7 +90,7 @@ server <- function(input, output) {
       return(NULL)
     }
     ggplot(filtered(), aes(Alcohol_Content, fill = Type)) +
-      geom_histogram(colour = "black") +
+      geom_histogram(bins = 50, colour = "black") +
       labs(x = "Alcohol content", y = "Number of beverages") +
       theme_bw() +
       theme(axis.title=element_text(size=14, face = "bold"),
